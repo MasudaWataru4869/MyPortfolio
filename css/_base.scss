@@ -1,0 +1,44 @@
+// 変数 //
+$white: #fff;
+$black: #222;
+$base: #f8f8f8;
+$hello: #00afb5;
+$profile: #d16014;
+$vision: #f0ff49;
+$skills: #ff7b9c;
+$works: #199b25;
+$contact: red;
+
+// font
+@font-face {
+  font-family: "reitam";
+  src: url("../fonts/Reitam Regular.otf") format("opentype");
+}
+
+body {
+  background-color: $base;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif, "Noto Serif JP", serif, "Avenir",
+    "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+    "MS Ｐゴシック", "MS PGothic";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  overflow-x: clip;
+}
+
+ul {
+  list-style: none;
+}
+
+.profile-name-box rt, .portfolio-text p, dd, .aim-profile, .section p, .works-item-main-title {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro",
+  "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "MS Ｐゴシック",
+  "MS PGothic", sans-serif;
+}

@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+/* 文字コードの指定 */
+
+// Google Fontsの読み込み
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&family=Russo+One&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Noto+Serif+JP&display=swap');
+
+// Scssファイルの読み込み
+@import "base";
+@import "about";
+@import "header";
+@import "profile";
+@import "vision";
+@import "shape-slider";
+@import "skills";
+@import "works";
+@import "contact";
+@import "cover";
+@import "footer";
+@import "portfolio1";
+@import "portfolio2";
+@import "portfolio3";
+@import "portfolio4";
+@import "loading";

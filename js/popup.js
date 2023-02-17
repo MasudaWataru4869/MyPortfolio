@@ -1,0 +1,1 @@
+new LuminousGallery(document.querySelectorAll(".zoom_list"));

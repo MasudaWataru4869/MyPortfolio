@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>MasudaWataru</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-touch-icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9dbe5551f0.js"></script>
+    <!-- Javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader">
+            <span></span>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="title-animate">
+        <div class="wrap-bg-top"></div>
+        <div class="wrap-bg-bottom"></div>
+        <div class="wrap">
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="344px"
+                    height="69px">
+                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                        d="M0.076,66.637 L14.384,66.637 L14.384,38.805 L42.118,38.805 L42.118,66.637 L56.524,66.637 L56.524,1.369 L42.118,1.369 L42.118,26.653 L14.384,26.653 L14.384,1.369 L0.076,1.369 L0.076,66.637 Z" />
+                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                        d="M79.190,66.637 L118.880,66.637 L118.880,54.289 L93.204,54.289 L93.204,38.707 L114.470,38.707 L114.470,26.751 L93.204,26.751 L93.204,13.717 L118.880,13.717 L118.880,1.369 L79.190,1.369 L79.190,66.637 Z" />
+                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                        d="M139.427,66.781 L177.157,66.781 L177.157,54.433 L153.637,54.433 L153.637,1.513 L139.427,1.513 L139.427,66.781 Z" />
+                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                        d="M195.395,66.637 L233.125,66.637 L233.125,54.289 L209.605,54.289 L209.605,1.369 L195.395,1.369 L195.395,66.637 Z" />
+                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                        d="M278.323,68.032 C284.725,68.032 290.377,66.611 295.277,63.769 C300.177,60.927 303.965,56.942 306.645,51.813 C309.323,46.685 310.663,40.756 310.663,34.026 C310.663,27.428 309.323,21.613 306.645,16.582 C303.965,11.552 300.177,7.648 295.277,4.871 C290.377,2.095 284.725,0.706 278.323,0.706 C271.855,0.706 266.171,2.111 261.271,4.920 C256.371,7.730 252.581,11.682 249.903,16.778 C247.223,21.874 245.885,27.754 245.885,34.418 C245.885,41.017 247.240,46.864 249.952,51.960 C252.662,57.056 256.469,61.009 261.369,63.818 C266.269,66.628 271.919,68.032 278.323,68.032 L278.323,68.032 ZM278.323,55.586 C274.795,55.586 271.691,54.704 269.013,52.940 C266.333,51.176 264.260,48.694 262.790,45.492 C261.320,42.291 260.585,38.600 260.585,34.418 C260.585,30.237 261.320,26.529 262.790,23.295 C264.260,20.061 266.350,17.579 269.062,15.847 C271.772,14.116 274.859,13.250 278.323,13.250 C281.785,13.250 284.872,14.116 287.584,15.847 C290.294,17.579 292.386,20.061 293.856,23.295 C295.326,26.529 296.061,30.237 296.061,34.418 C296.061,40.821 294.444,45.950 291.210,49.804 C287.976,53.659 283.679,55.586 278.323,55.586 L278.323,55.586 Z" />
+                    <path fill-rule="evenodd" fill="rgb(0, 175, 181)"
+                        d="M334.000,47.000 C339.523,47.000 343.1000,51.477 343.1000,57.000 C343.1000,62.523 339.523,66.1000 334.000,66.1000 C328.477,66.1000 324.000,62.523 324.000,57.000 C324.000,51.477 328.477,47.000 334.000,47.000 Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <header id=header class="header">
+        <div class="header-tops-box">
+            <div class="header-tops">
+                <a class="header-logo" href="index.html"><img alt="logo" src="./images/works/portfoio-header-logo.png">
+                    <p>Masuda Wataru</p>
+                </a>
+            </div>
+        </div>
+        <div id="nav-button" class="nav-button">
+            <div class="nav-menu-logo">
+                <p><span class="logo-1">M</span><span class="logo-2">E</span><span class="logo-3">N</span><span
+                        class="logo-4">U</span></p>
+            </div>
+            <button id="open-btn" class="toggle-btn">
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-close-button" class="nav-close-button">
+            <div class="nav-close-logo">
+                <p><span class="logo-1">C</span><span class="logo-2">L</span><span class="logo-3">O</span><span
+                        class="logo-4">S</span><span class="logo-5">E</span></p>
+            </div>
+        </div>
+
+        <!-- メニューナビゲーション -->
+        <nav id="global-menu" class="nav-menu">
+            <div class="sp-nav-box">
+                <ul class="nav-list">
+                    <li class="nav-menu-li nav-li-1">
+                        <div></div>
+                        <a href="#HOME">HELLO</a>
+                    </li>
+                    <li class="nav-menu-li nav-li-2">
+                        <a href="#profile-section">PROFILE</a>
+                    </li>
+                    <li class="nav-menu-li nav-li-3">
+                        <a href="#vision">VISION</a>
+                    </li>
+                    <li class="nav-menu-li nav-li-4">
+                        <a href="#SKILLS">SKILLS</a>
+                    </li>
+                    <li class="nav-menu-li nav-li-5">
+                        <a href="#WORKS">WORKS</a>
+                    </li>
+                    <li class="nav-menu-li sp-nav-sns">
+                        <a class="sp-sns-links" href="https://github.com/MasudaWataru4869">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="sp-sns-links" href="https://masudawataru.sakura.ne.jp/contact/index.php">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SNSナビゲーション -->
+        <div class="links-menu">
+            <ul class="links-menu-container">
+                <li class="links-menu-anim icon-github"><a class="sns-links" href="https://github.com/MasudaWataru4869"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="links-menu-anim icon-mail"><a class="sns-links" href="https://masudawataru.sakura.ne.jp/contact/index.php"><i
+                            class="fas fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- コピーライト -->
+        <div class="copyright-menu">
+            <p><small class="copyright-text">© 2023 Masuda Wataru</small></p>
+        </div>
+
+        <!-- スクロール -->
+        <div class="scroll-container">
+            <div class="scrolldown1"><span>Scroll</span></div>
+            <div class="scrolldown2"><span>Scroll</span></div>
+        </div>
+
+        <div class="scrolltop-container">
+            <a class="scrolltop"><span>top</span></a>
+            <a class="sp-scrolltop"><span></span></a>
+        </div>
+
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <section id=HOME class="cover-section">
+            <div class="header-icon-box">
+                <span class="header-icon"></span>
+            </div>
+        </section>
+
+        <section class="hello scrollify">
+            <div class="page-color"></div>
+            <div id=cover class="sticky">
+                <div class="padding">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="344px"
+                        height="69px">
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                            d="M0.076,66.637 L14.384,66.637 L14.384,38.805 L42.118,38.805 L42.118,66.637 L56.524,66.637 L56.524,1.369 L42.118,1.369 L42.118,26.653 L14.384,26.653 L14.384,1.369 L0.076,1.369 L0.076,66.637 Z" />
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                            d="M79.190,66.637 L118.880,66.637 L118.880,54.289 L93.204,54.289 L93.204,38.707 L114.470,38.707 L114.470,26.751 L93.204,26.751 L93.204,13.717 L118.880,13.717 L118.880,1.369 L79.190,1.369 L79.190,66.637 Z" />
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                            d="M139.427,66.781 L177.157,66.781 L177.157,54.433 L153.637,54.433 L153.637,1.513 L139.427,1.513 L139.427,66.781 Z" />
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                            d="M195.395,66.637 L233.125,66.637 L233.125,54.289 L209.605,54.289 L209.605,1.369 L195.395,1.369 L195.395,66.637 Z" />
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                            d="M278.323,68.032 C284.725,68.032 290.377,66.611 295.277,63.769 C300.177,60.927 303.965,56.942 306.645,51.813 C309.323,46.685 310.663,40.756 310.663,34.026 C310.663,27.428 309.323,21.613 306.645,16.582 C303.965,11.552 300.177,7.648 295.277,4.871 C290.377,2.095 284.725,0.706 278.323,0.706 C271.855,0.706 266.171,2.111 261.271,4.920 C256.371,7.730 252.581,11.682 249.903,16.778 C247.223,21.874 245.885,27.754 245.885,34.418 C245.885,41.017 247.240,46.864 249.952,51.960 C252.662,57.056 256.469,61.009 261.369,63.818 C266.269,66.628 271.919,68.032 278.323,68.032 L278.323,68.032 ZM278.323,55.586 C274.795,55.586 271.691,54.704 269.013,52.940 C266.333,51.176 264.260,48.694 262.790,45.492 C261.320,42.291 260.585,38.600 260.585,34.418 C260.585,30.237 261.320,26.529 262.790,23.295 C264.260,20.061 266.350,17.579 269.062,15.847 C271.772,14.116 274.859,13.250 278.323,13.250 C281.785,13.250 284.872,14.116 287.584,15.847 C290.294,17.579 292.386,20.061 293.856,23.295 C295.326,26.529 296.061,30.237 296.061,34.418 C296.061,40.821 294.444,45.950 291.210,49.804 C287.976,53.659 283.679,55.586 278.323,55.586 L278.323,55.586 Z" />
+                        <path fill-rule="evenodd" fill="rgb(0, 175, 181)"
+                            d="M334.000,47.000 C339.523,47.000 343.1000,51.477 343.1000,57.000 C343.1000,62.523 339.523,66.1000 334.000,66.1000 C328.477,66.1000 324.000,62.523 324.000,57.000 C324.000,51.477 328.477,47.000 334.000,47.000 Z" />
+                    </svg>
+                </div>
+                <div class="cover-title-name fadeUp">
+                    <div class="name-title">
+                        <p class="">welcome to my portfolio.</h2>
+                        <h2 class="">MASUDA WATARU</h2>
+                    </div>
+                </div>
+        </section>
+
+        <section id=profile-section class="area-1 scrollify">
+            <div id=profile class="profile-sticky">
+                <div class="profile-main-title">
+                    <h1>Profile<span class="profile-title-bg"></span></h1>
+                </div>
+                <div class="about-section">
+                    <div id="wrapper" class="about-page">
+                        <div id="fixed-area">
+                            <!--左固定エリア-->
+                            <div class="profile-container">
+                                <div class="profile-box">
+                                    <div class="portfolio-img">
+                                        <img class="" src="./images/profile/profile1.jpg" alt="増田渉" />
+                                    </div>
+                                    <div class="profile-more">
+                                        <div class="profile-name-box">
+                                            <h1 class="portfolio-firstname"><ruby>増田<rt>ますだ</rt></ruby></h1>
+                                            <h1 class="portfolio-lastname"><ruby>渉<rt>わたる</rt></ruby></h1>
+                                        </div>
+                                        <p>Masuda Wataru</p>
+                                        <p>1996年3月19日</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <p>愛知県豊川市生まれ。大阪体育大学健康福祉学部卒業。<br />
+                                        大学では、スポーツ指導・障害者スポーツ・幼児体育を学びました。<br />
+                                        大学卒業後は、沖縄県石垣島に移住。そこで漁師やダイビングインストラクターを経験。<br />
+                                        コロナになり石垣島にワーケーションにくる人が急増し、人との出会いの中でwebデザインに興味を持ち始める。その後、独学で学び始める。物を作る楽しみやスキルを身につける喜びを感じながら日々学習しております。
+                                    </p>
+                                </div>
+                            </div>
+                            <!--/fixed-area-->
+                        </div>
+                        <div id="container">
+                            <!--右エリア-->
+                            <div class="abouto-right-container">
+                                <div class="area">
+                                    <ul class="timeline">
+                                        <li>
+                                            <dl>
+                                                <dt><strong>1996</strong></dt>
+                                                <dd>愛知県豊川市にて生まれる</dd>
+                                            </dl>
+                                            <span class="border-line"></span>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt><strong>2011</strong></dt>
+                                                <dd>愛知県立御津高等学校入学</dd>
+                                            </dl>
+                                            <span class="border-line"></span>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt><strong>2014</strong></dt>
+                                                <dd>大阪体育大学入学</dd>
+                                            </dl>
+                                            <span class="border-line"></span>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt><strong>2018</strong></dt>
+                                                <dd>沖縄県石垣島に移住、株式会社勝水産に入社</dd>
+                                            </dl>
+                                            <span class="border-line"></span>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt><strong>2020</strong></dt>
+                                                <dd>株式会社勝水産を退社後、<br>
+                                                    人との出会いを求めリゾートバイト生活を始める</dd>
+                                            </dl>
+                                            <span class="border-line"></span>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt><strong>2023</strong></dt>
+                                                <dd>現在</dd>
+                                            </dl>
+                                            <span class="border-line"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="area-2 scrollify">
+            <div id="" class="vision-sticky">
+                <div class="vision-main-title">
+                    <h1>Vision<span class="vision-title-bg"></span></h1>
+                </div>
+                <div class="vision-section">
+                    <div class="aim-profile">
+                        <div class="aim-profile-container">
+                            <img class="aim-profile-1" src="./images/profile/profile2.png" alt="book" />
+                            <img class="aim-profile-2" src="./images/profile/profile3.png" alt="book" />
+                            <img class="aim-profile-3" src="./images/profile/profile4.png" alt="book" />
+                            <h3 class="aim-profile-title">
+                                絵本は人を惹きつける
+                            </h3>
+                            <div class="aim-profile-text-box">
+                                <p class="aim-profile-main-text">人を惹きつけれる<br>デザイナーに</p>
+                                <div class="aim-profile-sub-text">
+                                    <p>絵本のようなデザインを目指しています。</p>
+                                    <p>絵本は、誰が読んでもわかりやすいように作られてます。</p>
+                                    <p>それでいて何度読んでもおもしろい。アートのような絵やパッとひと目見て読みたいと思わせるようなインパクト。</p>
+                                    <p>子供たちがページをめくるたびに興奮し、惹きつけるられる工夫。様々な考えや思惑が存在していると考えます。</p>
+                                    <p>絵本のような伝わりやすく読みやすい、ページをめくるたびに興奮し、見た人を惹きつけるようデザインを目指しています。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=SKILLS class="area-3 scrollify">
+            <div class="skills-sticky">
+                <div class="skills-main-title">
+                    <h1>Skills<span class="skills-title-bg"></span></h1>
+                </div>
+                <div class="skills-section">
+                    <div class="skills-page section-shape-slider">
+                        <div class=section-icon-box><span class=section-icon></span></div>
+                        <nav class="section__nav">
+                            <ul class="section__nav-list">
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo1.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo2.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo3.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo4.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo5.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo6.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo7.png">
+                                    </a>
+                                </li>
+                                <li class="section__nav-item">
+                                    <a href="" class="section__nav-link">
+                                        <img src="./images/skills/skills-logo8.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="section">
+                            <div class="section__wrapper">
+                                <h1 class="section__title">HTML</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="4"></span>
+                                </div>
+                                <p>下層ページも含めWEBサイトを1から制作することが可能です。基本的なコーディングは問題ありません。メインエディタは、AWS Cloud9を使っています。</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper">
+                                <h1 class="section__title">CSS</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="4"></span>
+                                </div>
+                                <p>レスポンシブやsass・アニメーションを含め、基本的なところは問題なく、実装できます。また、不具合があってもディベロッパーツールを使い解決できます。</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper ">
+                                <h1 class="section__title">Javascript</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="2"></span>
+                                </div>
+                                <p>複雑なコードなどは書くことができませんが、プラグインの導入やクラス名の付与などの簡単なコードは実装できます。まだまだ調べながら実装することがほとんどです。</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper wrapper-photoshop">
+                                <h1 class="section__title">Photoshop</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="3"></span>
+                                </div>
+                                <p>Adobeで配信されている無料動画やYoutubeを参考に操作を学習しました。主にデザインカンプの制作と写真の編集に使用しています。デザインカンプの制作や写真の補正・加工・切り抜きといった画像の編集など作業が可能です。わからないことやできないことでも調べれば操作・実装ができます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper wrapper-illust">
+                                <h1 class="section__title">Illustrator</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="3"></span>
+                                </div>
+                                <p>Adobeで配信されている無料動画やYoutubeを参考に操作を学習しました。主にワイヤーフレームの制作やイラスト作りに使用しています。簡単なロゴ・アイコンの作成などの作業が可能です。ただ複雑なロゴや複雑なアイコンなどの制作は、時間がかかってしまいます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper wrapper-lightroom">
+                                <h1 class="section__title">Lightroom</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="4.5"></span>
+                                </div>
+                                <p>大学生の頃からカメラが趣味で約6年ほど使用しています。基本的な操作は、ひと通りできます。</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper wrapper-steering">
+                                <h1 class="section__title">Steering</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="5"></span>
+                                </div>
+                                <p>船を操船できます。沖縄の石垣島に住んでる時は、仕事で毎日、船を操船していました。車の運転よりも慣れております。経験上最大約50フィート(約15m)までは操船可能です。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper wrapper-teech">
+                                <h1 class="section__title">Teaching</h1>
+                                <div class="skills-stars-box">
+                                    <span class="star-rating" data-rate="5"></span>
+                                </div>
+                                <p>大学時代は、教育やスポーツ指導について学び教員免許を所持しています。またダイビングのインストラクター経験もあります。人に物事を教えることは、苦ではないです。むしろ好きです。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section__wrapper wrapper-library skills-last-text">
+                                <h1 class="section__title">Skills Library</h1>
+                                <p>私が持っているスキルです。もっと向上できるよう、もっと増やせるように日々勉強しております。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=WORKS class="area-4 scrollify">
+            <div id=works class="works-sticky">
+                <div class="works-main-title">
+                    <h1>Works<span class="works-title-bg"></span></h1>
+                </div>
+                <div class="works-section">
+                    <div class="works-page">
+                        <div class=section-icon-box><span class=section-icon></span></div>
+                        <div class="works-container">
+                            <ul class="works-list">
+                                <li class="works-list-item">
+                                    <a href="./portfolio1.html" class="">
+                                        <div class="works-list-item-eyecatch">
+                                            <img src="./images/works/portfolio1top.png" class="">
+                                            <div class="hover-mask">
+                                                <div class="mask-text">view more</div>
+                                            </div>
+                                        </div>
+                                        <div class="works-list-item-text-box">
+                                            <h2 class="works-item-main-title">秘境の宿 「飛龍邸」(架空サイト)</h2>
+                                            <p class="works-category">Design & Create</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="works-list-item">
+                                    <a href="./portfolio2.html" class="">
+                                        <div class="works-list-item-eyecatch">
+                                            <img src="./images/works/portfolio2top.png" class="">
+                                            <div class="hover-mask">
+                                                <div class="mask-text">view more</div>
+                                            </div>
+                                        </div>
+                                        <div class="works-list-item-text-box">
+                                            <h2 class="works-item-main-title">かぷりす</h2>
+                                            <p class="works-category">Design & Create</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="works-list-item">
+                                    <a href="./portfolio3.html" class="">
+                                        <div class="works-list-item-eyecatch">
+                                            <img src="./images/works/portfolio7top.png" class="">
+                                            <div class="hover-mask">
+                                                <div class="mask-text">view more</div>
+                                            </div>
+                                        </div>
+                                        <div class="works-list-item-text-box">
+                                            <h2 class="works-item-main-title"> My Portfolio</h2>
+                                            <p class="works-category">Design & Create</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="works-list-item">
+                                    <a href="./portfolio4.html" class="">
+                                        <div class="works-list-item-eyecatch">
+                                            <img src="./images/works/portfolio10top.png" class="">
+                                            <div class="hover-mask">
+                                                <div class="mask-text">view more</div>
+                                            </div>
+                                        </div>
+                                        <div class="works-list-item-text-box">
+                                            <h2 class="works-item-main-title">Photo Gallery</h2>
+                                            <p class="works-category">Design & Create & Picture</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id=CONTACT class="area-5 scrollify">
+            <div class="contact-section">
+                <div class="contact-page">
+                    <div class=contact-background-box>
+                            <div class=contact-title-box>
+                                <h1 class=contact-main-title>Contact</h1>
+                            </div>
+                            <div class="contact-btn">
+                                <a href="https://masudawataru.sakura.ne.jp/contact/index.php">お問い合わせはこちらから</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="sp-footer">
+        <div class="footer-conteinar">
+            <p class="footer-copyright-text">© 2023 Masuda Wataru</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/shape-slider.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/textanime.js"></script>
+
+
+
+</body>
+
+</html>

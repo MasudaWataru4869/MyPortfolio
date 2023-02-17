@@ -1,0 +1,106 @@
+/* ----下層ページ お問い合せフォーム---- */
+
+#CONTACT {
+  position: relative;
+  top: 20rem;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  @media (max-width: 768px) {
+    top: 0;
+  }
+  @media (max-width: 480px) {
+    top: 65vh;
+    height: 50vh;
+  }
+}
+
+.area-5 .fade-in {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.area-5 .fade-in.active-up {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s ease;
+  transition-delay: .5s;
+}
+
+.contact-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.contact-background-box {
+  position: relative;
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+  @media (max-width: 480px) {
+    padding-top: 5rem;
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  @media (max-width: 480px) {
+    padding: 1rem 0;
+  }
+}
+
+.contact-main-title {
+  margin: 0;
+  font-size: 5rem;
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+  }
+}
+
+.contact-btn {
+  margin: 5rem 0;
+  font-size: 1.5rem;
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+.contact-btn a {
+  padding: 1rem;
+  border: solid 1.5px #222222;
+  box-shadow: 2px 3px 2px #222222;
+  background-color: #f8f8f8;
+  color: #222222;
+}
+
+.contact-btn a:hover {
+  @media (min-width: 769px) {
+    background-color: #d2d2d2;
+  }
+}

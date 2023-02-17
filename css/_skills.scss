@@ -1,0 +1,128 @@
+.area-3 {
+  position: relative;
+  width: 100vw;
+  height: 300vh;
+  @media (max-width: 768px) {
+    height: 200vh;
+  }
+}
+
+.skills-sticky {
+  position: -webkit-sticky;
+  position:         sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.skills-main-title h1 {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 5rem;
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+  }
+}
+
+.skills-main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+  transition: all 1s;
+}
+
+.skills-title-bg {
+  opacity: .8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, 20%) scale(0, 1);
+  width: 100%;
+  height: 40%;
+  background: $skills;
+  transition: all .7s cubic-bezier(.65, 0, .35, 1);
+}
+
+.skills-title-bg.bg-active {
+  transform: translate(-50%, 20%) scale(1, 1);
+  transition: all .7s cubic-bezier(.65, 0, .35, 1);
+}
+
+.area-3.view .skills-main-title {
+  transform: translate(43%, -50%) rotate(-90deg);
+}
+
+.skills-section {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(50px);
+  width: 100%;
+  letter-spacing: .1em;
+}
+
+.area-3.view .skills-section {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease;
+  transition-delay: .5s;
+}
+
+.skills-stars-box {
+  display: flex;
+  width: 80%;
+  height: 6rem;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/*========= 星のためのCSS ===============*/
+
+$star-width: 36px; //星のサイズ
+
+.star {
+  &-rating {
+    position: relative;
+    width: 100%;
+    font-size: $star-width; //星の大きさ。変数で指定
+
+    &::before, &::after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      color: #e1e1e1; //グレー
+      content: "★★★★★";
+    }
+
+    &::after {
+      overflow: hidden;
+      color: #ffb448; //黄色
+    }
+  }
+}
+
+//レーティングの間隔。1~5まで0.5刻み。
+@for $i from 0 through 10 {
+  .star-rating[data-rate="#{$i * 0.5}"]::after {
+    width: $i * .5 * $star-width;
+  }
+}
+
+/*========================*/
+
+.skills-text {
+  font-size: 2rem;
+}

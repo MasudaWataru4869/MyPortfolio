@@ -1,0 +1,245 @@
+.area-1 {
+  position: relative;
+  width: 100vw;
+  height: 300vh;
+  @media (max-width: 768px) {
+    height: 200vh;
+  }
+}
+
+.profile-sticky {
+  position: -webkit-sticky;
+  position:         sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.profile-main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+  transition: all 1s;
+}
+
+.profile-title-bg {
+  opacity: .8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, 20%) scale(0, 1);
+  width: 100%;
+  height: 40%;
+  background: $profile;
+  transition: all .7s cubic-bezier(.65, 0, .35, 1);
+}
+
+.profile-title-bg.bg-active {
+  transform: translate(-50%, 20%) scale(1, 1);
+  transition: all .7s cubic-bezier(.65, 0, .35, 1);
+}
+
+.area-1.view .profile-main-title {
+  transform: translate(43%, -50%) rotate(-90deg);
+}
+
+.profile-main-title h1 {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 5rem;
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+  }
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(50px);
+  width: 100%;
+  height: 100vh;
+  letter-spacing: .1em;
+}
+
+.area-1.view .about-section {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease;
+  transition-delay: .5s;
+}
+
+/*========= 左固定レイアウトのためのCSS ===============*/
+/*左と右を囲う全体のエリア*/
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 85%;
+  }
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+/*左エリア*/
+#fixed-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  color: $black;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+    margin-top: 3rem;
+  }
+}
+
+/*プロフィール*/
+.profile-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-img {
+  width: 50%;
+}
+
+.portfolio-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile-more {
+  width: 40%;
+  letter-spacing: .2em;
+}
+
+.profile-more p {
+  @media (max-width: 768px) {
+    font-size: .7rem;
+  }
+}
+
+.profile-name-box {
+  display: flex;
+}
+
+.profile-name-box h1 {
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.profile-name-box rt {
+  font-weight: normal;
+  font-size: .8rem;
+}
+
+.portfolio-lastname {
+  text-indent: .5em;
+}
+
+.portfolio-text {
+  width: 95%;
+  margin: auto;
+  margin-top: 2rem;
+  @media (max-width: 768px) {
+    width: 85%;
+    font-size: .8rem;
+  }
+}
+
+/*右エリア*/
+#container {
+  /*横半分50%にする*/
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+/*========= バー表示のためのCSS ===============*/
+
+/*タイムライン全体の設定*/
+.timeline {
+  width: auto;
+  padding-left: 19.686%;
+  @media (max-width: 768px) {
+    padding-left: 1.5rem;
+  }
+}
+
+.timeline li {
+  list-style: none;
+  /*線の起点とするためrelativeを設定*/
+  position: relative;
+  padding: 0 0 20px 0;
+  @media (max-width: 768px) {
+    padding: 0 0 5px 0;
+  }
+}
+
+.timeline dl {
+  margin: 0 0 20px 3em;
+  @media (max-width: 768px) {
+    margin: 0 0 15px 2em;
+  }
+}
+
+.timeline dd {
+  @media (max-width: 768px) {
+    margin-top: 5px;
+    font-size: .8rem;
+  }
+}
+
+.timeline dd strong {
+  display: block;
+  padding: 10px 0;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+  /*線の位置*/
+  position: absolute;
+  top: 0;
+  left: .2em;
+  width: 2px;
+  /*線の太さ*/
+  height: 100%;
+  background: #cccccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #666666;
+  content: "";
+}

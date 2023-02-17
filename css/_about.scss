@@ -1,0 +1,102 @@
+.hello {
+  position: relative;
+  width: 100vw;
+  height: 300vh;
+  @media (max-width: 768px) {
+    height: 200vh;
+  }
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position:         sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.padding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  @media (max-width: 480px) {
+    transform: translate(-50%, -50%) scale(.7);
+  }
+}
+
+.hello.view .padding {
+  transform: translate(-320%, -50%);
+}
+
+.padding path {
+  stroke: #222222;
+  stroke-width: 1px;
+}
+.padding path:last-child {
+  stroke: #00afb5;
+  stroke-width: 1px;
+}
+
+.page-color {
+  position: absolute;
+  z-index: -5;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background-color: #00afb5;
+  transition: all 1s;
+}
+
+.hello.view .page-color {
+  transform: translateX(-100%);
+}
+
+.cover-title-name {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(50px);
+  width: 100%;
+  height: 100%;
+}
+
+.hello.view .cover-title-name {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease;
+  transition-delay: .5s;
+}
+
+.name-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name-title p {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+  }
+}
+
+.name-title h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Secular One", sans-serif;
+  letter-spacing: .2em;
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+}
