@@ -15,31 +15,6 @@
   overflow: hidden;
 }
 
-.padding {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  transform: translate(-50%, -50%);
-  transition: all 1s;
-  @media (max-width: 480px) {
-    transform: translate(-50%, -50%) scale(.7);
-  }
-}
-
-.hello.view .padding {
-  transform: translate(-320%, -50%);
-}
-
-.padding path {
-  stroke: #222222;
-  stroke-width: 1px;
-}
-.padding path:last-child {
-  stroke: #00afb5;
-  stroke-width: 1px;
-}
-
 .page-color {
   position: absolute;
   z-index: -5;

@@ -144,9 +144,8 @@
   position: relative;
   z-index: 999;
 }
-
 .title-animate.none {
-  display: none;
+  z-index: 10;
 }
 
 .wrap-bg-top {
@@ -167,6 +166,11 @@
   background-color: #ffffff;
 }
 
+.wrap-bg-top.none,
+.wrap-bg-bottom.none {
+  display: none;
+}
+
 .wrap {
   display: none;
   position: fixed;
@@ -174,9 +178,14 @@
   left: 50%;
   z-index: 999;
   transform: translate(-50%, -50%);
+  transition: all 1s;
   @media (max-width: 480px) {
     transform: translate(-50%, -50%) scale(.7);
   }
+}
+
+.wrap.view {
+      transform: translate(-320%, -50%);
 }
 
 .start .wrap {
