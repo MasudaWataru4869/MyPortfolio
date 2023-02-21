@@ -4,9 +4,11 @@ $(window).scroll(function () {
 
   if ($(window).scrollTop() > windowHeight / 2) {
     $(".hello").addClass("view");
+    $(".wrap").addClass("view");
     $(".scroll-container").addClass("scroll-position");
   } else {
     $(".hello").removeClass("view");
+    $(".wrap").removeClass("view");
     $(".scroll-container").removeClass("scroll-position");
   }
 });

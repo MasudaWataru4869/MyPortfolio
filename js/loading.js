@@ -11,6 +11,8 @@ $(document).ready(function() {
     setTimeout(function() {
         $(".wrap-bg-top").animate({ "height": "0" }, 2000);
         $(".wrap-bg-bottom").animate({ "height": "0" }, 2000, function() {
+            $('.wrap-bg-top').addClass('none');
+            $('.wrap-bg-top-bottom').addClass('none');
             $('.title-animate').addClass('none');
         });
     }, 7500)
